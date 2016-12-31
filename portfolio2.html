@@ -50,7 +50,7 @@
 	<body>
 		<div id="mainImagePortfolio">
 			<h2 class="portfolioHeadings">Residential</h2>
-			<div id="gallery-t-group" class="royalSlider rsDefaultInv" title="Residential">
+			<div id="gallery-t-group" class="royalSlider rsDefaultInv">
 				<a class="rsImg" href="../img/1.jpg"><img class="rsTmb" width="56" height="56" src="../img/1.jpg"></a>
 			    <a class="rsImg" href="../img/2.jpg"><img class="rsTmb" width="56" height="56" src="../img/2.jpg"></a>
 			    <a class="rsImg" href="../img/3.jpg"><img class="rsTmb" width="56" height="56" src="../img/3.jpg"></a>
@@ -66,7 +66,6 @@
 			    <a class="rsImg" href="../img/res01.jpg"><img class="rsTmb" width="56" height="56" src="../img/res01.jpg"></a>
 			    <a class="rsImg" href="../img/res02.jpg"><img class="rsTmb" width="56" height="56" src="../img/res02.jpg"></a>
 			    <a class="rsImg" href="../img/res03.jpg"><img class="rsTmb" width="56" height="56" src="../img/res03.jpg"></a>
-			    
 		    </div>
 			<!-- End of royalSlider div -->
 
@@ -120,9 +119,9 @@
 			jQuery(document).ready(function() {
 			  var win = $(window);
 			  var slider = $('#gallery-t-group, #gallery-t-group2').royalSlider({
-			    controlNavigation: 'thumbnails',
+			  
 			    thumbs: {
-			      orientation: 'vertical',
+			      orientation: 'horizontal',
 			      navigation: false,
 			      fitInViewport: (win.width() < 760) ? false : true,
 			      spacing: 1,
@@ -133,7 +132,7 @@
 			      change: true,
 			      prefix: 'image-'
 			    },
-			    globalCaption: false,
+			    globalCaption: true,
 			    numImagesToPreload: 2,
 			    fadeinLoadedSlide: true,
 			    imageAlignCenter: true,
