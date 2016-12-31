@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Tell browsers what to do with the viewport on page load -->
+		<!-- Setting 'maximum-scale' and 'minimum-scale' values to 1.0 will disable pinching and zooming on mobile/tablet devices (not a good idea, don't mess with someone people are used to being able to do) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Derrig | Talbot</title>
+
+		<!-- Styles that will be applied to ALL layouts (independent of viewport size) -->
+		<link rel="stylesheet" type="text/css" href="../css/style_01_all.css" />
+		
+		<!-- Styles that will be applied to devices that are 1362 px and larger (This is the default style sheet that is served) -->
+		<link rel="stylesheet" type="text/css" href="../css/style_02_large.css" />
+
+		<!-- Styles that will be applied to devices that are between 1038 and 1361 px large -->
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width: 1038px) and (max-width: 1361px)" href="../css/style_03_medium.css" />
+
+		<!-- Styles that will be applied to devices that are between 830 and 1037 px large -->
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width: 830px) and (max-width: 1037px)" href="../css/style_03.01_medium2.css" />
+
+		<!-- Styles that will be applied to devices that are between 50 and 829 px large -->
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width: 50px) and (max-width: 829px)" href="../css/style_04_small.css" />
+
+		<!-- Royal Slider CSS -->
+			<!-- (Used on homepage) -->
+			<!-- basic stylesheet -->
+			<link rel="stylesheet" href="../royalslider/royalslider.css">
+			<!-- skin stylesheet (change it if you use another) -->
+			<link rel="stylesheet" href="../royalslider/skins/default/rs-default.css">  
+			<!-- Plugin requires jQuery 1.8+  -->
+			<!-- If you already have jQuery on your page, you shouldn't include it second time. -->
+			<script src='../royalslider/jquery-1.8.3.min.js'></script>
+			<!-- Main slider JS script file --> 
+			<!-- Create it with slider online build tool for better performance. -->
+			<script src="../royalslider/jquery.royalslider.js"></script>
+				<!-- End of Royal Slider CSS -->
+
+		<!-- Font Awesome -->
+			<!-- Used for social media icons -->
+			<link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+		<!-- /Font Awesome -->
+		<!-- HTML5 Shiv for Internet Explorer -->
+		<!-- IE 7 and 8 don't support HTML 5 so you've got to use the HTML5 Shiv -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="textBox">
+			<div class="textBox2">
+				<h1>Contact</h1>
+				<div class="vcard">
+					<div class="org"><h2 class="dt">DERRIG | TALBOT</h2></div>
+					<div class="adr">
+						<a href="https://goo.gl/maps/QoDHZ">
+							<div class="street-address">16893 Hymus Boulevard</div>
+							<span class="locality">Kirkland</span>,
+							<span class="region">Québec</span><br />
+							<span class="postal-code">H9H 3L4</span>
+							<!-- <span class="country-name">Canada</span> -->
+						</a>
+					</div><!-- <div class="adr"> -->
+					<div class="block">
+						<div class="tel">
+							<a href="tel:15146005628">(514) 600-</a>5628
+						</div>
+						<a class="email" href="mailto:info@derrigtalbot.com">info@derrigtalbot.com</a>
+					</div>
+					<!-- <div><span class="category">Derrig | Talbot Inc.</span></div> -->
+					<div id="rbq"><span class="category">RBQ #8360-3704-01</span></div>
+				</div><!-- <div class="vcard"> -->
+
+				<!-- CONTACT FORM -->
+				<div id="contact-form">  
+					<ul id="errors" class="">  
+					    <li id="info">Sorry, there were some problems with your form submission:</li>  
+					</ul>  
+					<p id="success">Thanks for getting in touch with us, a representative will contact you ASAP.</p>
+					<!-- STEP 1: Put the full URL to formmail.php on your website in the 'action' value. -->
+					<form method="post" action="http://www.derrigtalbot.com/formmail.php" name="SampleForm">
+						<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+						<!-- STEP 2: Put your email address in the 'recipients' value.
+						             Note that you also have to allow this email address in the
+						             $TARGET_EMAIL setting within formmail.php!
+						-->
+						<!-- Live Version -->
+						<input type="hidden" name="recipients" value="info@derrigtalbot.com" />
+
+						<!-- Development Version -->
+						<!-- <input type="hidden" name="recipients" value="jeffbushdesign@gmail.com" /> -->
+						
+						<!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged.
+						        NOTE: DO NOT put your email address and name here.
+						        "Your email address" and "Your name" are error messages for your users to see,
+						        not placeholders for you to replace.
+						-->
+						<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+						<!-- STEP 4: Put your subject line in the 'subject' value. -->
+						<input type="hidden" name="subject" value="Sample FormMail Testing" />
+						<!-- ALL DONE! Visit our site for HOW TO guides and more complex features. -->
+						<!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+						<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+						<!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+						<input type="hidden" name="mail_options" value="Exclude=email;realname" />
+
+						<h2>Get in Touch</h2>
+						<!-- <select>
+							<option value="general">General Inquiry</option>
+							<option value="estimate">I'd like an estimate</option>
+							<option value="other">Other</option>
+						</select> -->						
+						
+						<!-- <label for="message">Message:</label>   -->
+						<textarea id="message" name="Message" placeholder="Your message must be at least 20 characters long *" required="required" data-minlength="20"></textarea> 
+						
+						<!-- <label for="name">Name: <span class="required">*</span></label>  --> 
+						<input type="text" id="name" name="FullName" value="" placeholder="Name *" required="required" />  
+						
+						<!-- <label for="email">Email: <span class="required">*</span></label> -->  
+						<input type="email" id="email" name="EmailAddr" value="" placeholder="Email *" required="required" />  
+						
+						<!-- <label for="telephone">Telephone: <span class="required">*</span></label>  --> 
+						<input type="tel" id="telephone" name="Telephone" value="" placeholder="Telephone *" required="required" />  
+						
+						<span id="loading"></span>  
+						<p id="req-field-desc"><span class="required">*</span> all fields are required</p>  
+
+						<!-- Live Version	 -->
+						<input type="hidden" name="good_url" value="http://www.derrigtalbot.com/pgs/contact_thankyou.html" /> 
+						<input type="hidden" name="bad_url" value="http://www.derrigtalbot.com/pgs/contact_error.html" /> 
+
+						<!-- Development Version -->
+						<!-- <input type="hidden" name="good_url" value="http://www.jeffbush.com/derrigtalbot/pgs/contact_thankyou.html" />  -->
+						<!-- <input type="hidden" name="bad_url" value="http://www.jeffbush.com/derrigtalbot/pgs/contact_error.html" />  -->
+
+						<input type="submit" value="Submit" id="submit-button" />  
+					</form>
+				</div><!-- <div id="contact-form" class="clearfix"> -->
+				<!-- /CONTACT FORM -->
+
+			</div><!-- <div class="textBox2"> -->
+		</div>
+		<div class="mainImageHalf">
+			<div id="royalWithCheese" class="royalSlider">	
+				<img class="rsImg" src="../img/contact3.jpg" alt="">
+				<img class="rsImg" src="../img/TalbotRyan_4.jpg" alt="">
+				<!-- <img class="rsImg" src="../img/37.jpg" alt=""> -->
+			</div><!-- End of royalSlider div -->
+		</div><!-- End of mainImage div -->
+
+		<!-- Site navigation fixed to bottom of page -->
+		<a id="jump" id="top" href="#nav">Site Navigation</a>
+		<nav>
+			<!-- Logo is styled in CSS file as opposed to being an img tag so that we can serve different sized logos depending on the screen size -->
+			<a class="logo" href="../index.html"></a>
+			
+			<ul id="nav">
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li>
+	<a class="socialButton" href="https://instagram.com/derrigtalbot/">
+		<i class="fa fa-instagram"></i>
+	</a>
+	<a class="socialButton" href="https://www.facebook.com/derrigtalbot">
+		<i class="fa fa-facebook"></i>
+	</a>
+	<a class="socialButton" href="http://www.houzz.com/pro/derrigtalbot/__public">
+		<i class="fa fa-houzz"></i>
+	</a>
+</li>
+				<li><a href="fr_contact.html">Français</a></li>
+				<li id="back"><a href="#top">Back to Top</a></li>
+			</ul>
+			
+			<!-- <div id="socialIconsContainer">
+				<a class="socialButton" id="instagram" href="#"></a>
+				<a class="socialButton" id="facebook" href="#"></a>
+				<a class="socialButton" id="houzz" href="#"></a>
+			</div> -->
+		</nav>
+
+		<!-- Initialize Royal Slider -->
+		<script>
+		    
+		    jQuery(document).ready(function($) {
+			    $(".royalSlider").royalSlider({
+			    	// general options go gere
+			    	autoPlay: {
+			    		// autoplay options go gere
+			    		enabled: true,
+			    		pauseOnHover: true
+			    	}
+
+			    });  
+			});
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

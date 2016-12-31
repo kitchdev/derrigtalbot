@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*Styles for Medium Sized Screens*/
+
+
+a.logo {
+	width: 181px;
+	height: 43px;
+	bottom: 27px;
+	left: 25px;
+	background-image: url(../img/logo_derrigtalbot_02_medium_181x43px.png);
+}
+
+nav li {
+	padding-left: 2.428em;
+}
+
+/*
+iPad Portrait Orientation
+Move image up to top of screen at 50% of the height and 100% of the width
+*/
+.mainImageHalf {
+	background-color: #000;
+	position: relative;
+	width: 100%;
+	height: 50%;
+	margin-bottom: 91px;
+	/*top: 0;
+	right: 0;
+	float: right;*/
+}
+.textBox {
+	background-color: #000;
+	width: 100%;
+	/*float: left;
+	left: 0;
+	bottom: 0;*/
+}
+
+/*#socialIconsContainer {
+  right:   25px;
+  bottom:  27px;
+}*/
+
+nav ul {
+	right: 25px;
+	/*padding-top: 39px;*/
+}
+

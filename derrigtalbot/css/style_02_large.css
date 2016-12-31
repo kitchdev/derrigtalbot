@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+/*Styles for Large Sized Screens*/
+
+/*
+Summary of Style Sheets
+Styles applied to all devices, independent of screen size: 
+						style_01_all.css
+
+Styles applied based on screen size:
+	[961 - larger px] > style_02_large (default)
+	[670 - 960    px] > style_03_medium
+	[50  - 669    px] > style_04_small
+*/
+
+	
+
+nav ul {
+	right: 5.928em;
+	/*padding-top: 39px;*/
+}
+
+nav li {
+	padding-left: 92px;
+}
+
+/*nav li:nth-child(5) {
+	padding-left: 46px;
+}
+nav li:nth-child(6) {
+	padding-left: 46px;
+}*/
+
+a.logo {
+	width: 241px;
+	height: 52px;
+	bottom: 19px;
+	left: 83px;
+	background-image: url(../img/logo_derrigtalbot_01_large_241x52px.png);
+}
+
+#mainImage {
+	/*Background is black*/
+	background-color: #000;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#mainImagePortfolio  {
+	/*Background is black*/
+	background-color: #000;
+	position: relative;
+	width: 90%;
+	/*height: 100%;*/
+	margin: 50px auto;
+	margin-bottom: 124px;	
+
+}
+
+.mainImageHalf {
+	background-color: #000;
+	position: relative;
+	width: 50%;
+	height: 100%;
+	right: 0;
+	float: right;
+}
+.textBox {
+	background-color: #000;
+	width: 50%;
+	float: left;
+	left: 0;
+}
+.textBox2 {
+	padding: 55px;
+}
+.textBox2 h1 {
+	/*font-family: 'roboto_condensedbold';*/
+    /*font-family: 'leaguegothic-regular';*/
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #646464;
+    text-transform: uppercase;
+	margin-bottom: 14px;
+	/*border-bottom: 4px dotted #fff;*/
+	/*Increase line height in order to increase space between text and bottom border*/
+	line-height: 2.5em;
+	font-size: 2em;
+	letter-spacing: 1px;
+}
+
+.portfolioHeadings {
+		/*font-family: 'roboto_condensedbold';*/
+    /*font-family: 'leaguegothic-regular';*/
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #646464;
+    text-transform: uppercase;
+	margin-top: 20px;
+	/*margin-bottom: 14px;*/
+	/*border-bottom: 4px dotted #fff;*/
+	/*Increase line height in order to increase space between text and bottom border*/
+	line-height: 2.5em;
+	font-size: 2em;
+	letter-spacing: 1px;
+}
+
+.portfolioHeadings:first-child {
+	margin-top: 0px;
+}
+
+
+#royalWithCheese {
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; /* height of thumbs (if not required set to 0) */
+    height: auto; /* optionally add !important for WP version*/
+    width: auto;
+}
+
+/*vCard*/
+.vcard h2 {
+	margin-bottom: 1em;
+	font-size: 1.25em;
+	letter-spacing: 1px;
+	/*font-weight: bold;*/
+}
+.vcard .adr {
+	margin-bottom: 1em;
+}
+.vcard .block {
+	margin-bottom: 1em;
+}
+/*End vCard*/
+
+/*Gallery with Deep Linking*/
+#gallery-t-group {
+  width: 100%;
+}
+.rsDefaultInv,
+.rsDefaultInv .rsOverflow,
+.rsDefaultInv .rsSlide,
+.rsDefaultInv .rsVideoFrameHolder,
+.rsDefaultInv .rsThumbs {
+  /*Grey background*/
+  /*background: #4d4d4f;*/
+  background: rgba(0,0,0,0);
+}
+
+#gallery-t-group .rsThumb {
+  float: left;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  padding: 0 5px 5px 0;
+}
+#gallery-t-group .rsThumbs {
+  width: 285px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 0 5px 0 5px;
+  right: 0;
+}
+#gallery-t-group .rsGCaption {
+  right: 285px;
+  line-height: 12px;
+  padding: 1px 7px;
+  font-size: 11px;
+  background: #4d4d4f;
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  float: none;
+  text-align: left;
+}
+@media screen and (min-width: 0px) and (max-width: 1200px) {  
+  #gallery-t-group .rsThumbs {
+    width: 228px;
+  }
+  #gallery-t-group .rsGCaption {
+    right: 228px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {  
+  #gallery-t-group .rsThumbs {
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1px 0 0 1px;
+  }
+  #gallery-t-group .rsThumbsContainer {
+    height: auto !important;
+  }
+  #gallery-t-group .rsGCaption { 
+    right: 0;
+  }
+
+}
+
+/*End - Gallery with Deep Linking*/
+
+/*Second Gallery*/
+/*Gallery with Deep Linking*/
+#gallery-t-group2 {
+  width: 100%;
+}
+.rsDefaultInv,
+.rsDefaultInv .rsOverflow,
+.rsDefaultInv .rsSlide,
+.rsDefaultInv .rsVideoFrameHolder,
+.rsDefaultInv .rsThumbs {
+  /*Grey background*/
+  /*background: #4d4d4f;*/
+  background: rgba(0,0,0,0);
+}
+
+#gallery-t-group2 .rsThumb {
+  float: left;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  padding: 0 5px 5px 0;
+}
+#gallery-t-group2 .rsThumbs {
+/*This controls the styling of the entire collection of thumbnails*/
+  width: 285px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /*padding: 0 0 0 1px;*/
+  padding: 0 5px 0 5px;
+  right: 0;
+}
+#gallery-t-group2 .rsGCaption {
+  right: 285px;
+  line-height: 12px;
+  padding: 1px 7px;
+  font-size: 11px;
+  background: #4d4d4f;
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  float: none;
+  text-align: left;
+}
+@media screen and (min-width: 0px) and (max-width: 1200px) {  
+  #gallery-t-group2 .rsThumbs {
+    width: 228px;
+  }
+  #gallery-t-group2 .rsGCaption {
+    right: 228px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {  
+  #gallery-t-group2 .rsThumbs {
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1px 0 0 1px;
+  }
+  #gallery-t-group2 .rsThumbsContainer {
+    height: auto !important;
+  }
+  #gallery-t-group2 .rsGCaption { 
+    right: 0;
+  }
+}
+
+/*End - Gallery with Deep Linking*/
+
+/* Social Media Icons */
+
+#socialIconsContainer {
+  
+}
+
+
+
+a#instagram {
+	width:  31px;
+	height: 31px;
+	/*padding-bottom: 4px;*/
+	/*padding-top: -10px;*/
+	margin-top: 0.714em;
+	background-image: url(../img/socialInstagram02.png);
+}
+
+/* Facebook Icon */
+a#facebook {
+	width:  31px;
+	height: 31px;
+	/*padding-top: 10px;*/
+	/*padding-bottom: 4px;*/
+	background-image: url(../img/socialFacebook02.png);
+}
+
+
+/* Houzz Icon */
+a#houzz {
+	width:  2.214em;
+	height: 2.214em;
+	/*padding-top: 10px;*/
+	background-image: url(../img/socialHouzz02.png);
+}
+
+#nav li {
+  line-height: 7em;
+  /*height: 0;*/
+}
+
+#nav li a.socialButton {
+	margin-bottom: -0.0499em;
+}
+
+.textBox2 h2 {
+	/*font-family: 'robotobold';*/
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+	color: #646464;
+	margin-bottom: 10px;
+	/*text-transform: uppercase;*/
+}
+
+.textBox2 ul {
+	list-style-type: disc;
+	padding-left: 18px;
+	color: #646464;
+
+	
+}
+
+.textBox2 ul span {
+	color: #fff;
+}
+
+.inset01 {
+	padding-left: 40px;
+}
+
+.floatLeft {
+	float: left;
+	margin-right: 40px;
+}
+
+.floatRight {
+	float: right;
+}
+
+.listBox {
+	margin: 40px 0;
+}
+
+.dt {
+	/*text-transform: uppercase;*/
+	/*font-family: 'leaguegothic-regular' !important; */
+    color: #646464;
+    /*text-transform: uppercase;*/
+	/*font-size: 1.5em !important;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
