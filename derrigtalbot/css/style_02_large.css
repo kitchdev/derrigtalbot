@@ -94,19 +94,48 @@ a.logo {
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     color: #646464;
     text-transform: uppercase;
-	margin-top: 20px;
+	margin-top: 10px;
 	/*margin-bottom: 14px;*/
 	/*border-bottom: 4px dotted #fff;*/
 	/*Increase line height in order to increase space between text and bottom border*/
 	line-height: 2.5em;
 	font-size: 2em;
 	letter-spacing: 1px;
+
 }
+
+.portfolioHeadings:hover{
+  cursor: pointer;
+  color: #cccccc;
+}
+
+
 
 .portfolioHeadings:first-child {
 	margin-top: 0px;
+  
 }
 
+.comProj {
+  margin-right: 10vw;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  text-transform: uppercase;
+  color: #646464;
+}
+
+.resProj {
+  margin-right: 10vw;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  text-transform: uppercase;
+  color: #646464;
+}
+.resProj:hover {
+  color: #cccccc;
+}
+
+.comProj:hover {
+  color: #cccccc;
+}
 
 #royalWithCheese {
 	position: absolute;
@@ -360,11 +389,9 @@ a#houzz {
 	/*font-size: 1.5em !important;*/
 }
 
-
-
-
-
-
+.resProj1 {
+  
+}
 
 
 

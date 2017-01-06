@@ -49,7 +49,11 @@
 	</head>
 	<body>
 		<div id="mainImagePortfolio">
-			<h2 class="portfolioHeadings">Residential</h2>
+			
+			<span class="header"></span><h2 class="portfolioHeadings gall1">Residential</h2>    <h2 class="portfolioHeadings gall2">Commercial</h2></span>
+			<div class="resProj">
+				<span class="resProj proj1">Project 1</span><span class="resProj proj2">Project 2</span><span class="resProj proj3"> Project 3</span>
+			</div>
 			<div id="gallery-t-group" class="royalSlider rsDefaultInv" title="Residential">
 				<a class="rsImg" href="../img/1.jpg"><img class="rsTmb" width="56" height="56" src="../img/1.jpg"></a>
 			    <a class="rsImg" href="../img/2.jpg"><img class="rsTmb" width="56" height="56" src="../img/2.jpg"></a>
@@ -66,12 +70,12 @@
 			    <a class="rsImg" href="../img/res01.jpg"><img class="rsTmb" width="56" height="56" src="../img/res01.jpg"></a>
 			    <a class="rsImg" href="../img/res02.jpg"><img class="rsTmb" width="56" height="56" src="../img/res02.jpg"></a>
 			    <a class="rsImg" href="../img/res03.jpg"><img class="rsTmb" width="56" height="56" src="../img/res03.jpg"></a>
-			    
 		    </div>
 			<!-- End of royalSlider div -->
-
-			<h2 class="portfolioHeadings">Commercial</h2>
-			<div id="gallery-t-group2" class="royalSlider rsDefaultInv">
+			<div class="comProj">
+				<span class="comProj proj1">Project 1</span><span class="comProj proj2">Project 2</span><span class="comProj proj3"> Project 3</span>
+			</div>
+			<div id="gallery-t-group2" class="royalSlider rsDefaultInv" >
 			    <a class="rsImg" href="../img/20.01.jpg"><img class="rsTmb" width="56" height="56" src="../img/20.01.jpg"></a>
 			    <a class="rsImg" href="../img/30.01.jpg"><img class="rsTmb" width="56" height="56" src="../img/30.01.jpg"></a>
 			    <a class="rsImg" href="../img/33.01.jpg"><img class="rsTmb" width="56" height="56" src="../img/33.01.jpg"></a>
@@ -119,7 +123,7 @@
 		<script>
 			jQuery(document).ready(function() {
 			  var win = $(window);
-			  var slider = $('#gallery-t-group, #gallery-t-group2').royalSlider({
+			  var slider = $('#gallery-t-group').royalSlider({
 			    controlNavigation: 'thumbnails',
 			    thumbs: {
 			      orientation: 'vertical',
@@ -159,6 +163,77 @@
 			    return false;
 			  });
 			});
+			jQuery(document).ready(function() {
+			  var win = $(window);
+			  var slider = $('#gallery-t-group2').royalSlider({
+			    controlNavigation: 'thumbnails',
+			    thumbs: {
+			      orientation: 'vertical',
+			      navigation: false,
+			      fitInViewport: (win.width() < 760) ? false : true,
+			      spacing: 1,
+			      autoCenter: false
+			    },
+			    deeplinking: {
+			      enabled: true,
+			      change: true,
+			      prefix: 'image-'
+			    },
+			    globalCaption: false,
+			    numImagesToPreload: 2,
+			    fadeinLoadedSlide: true,
+			    imageAlignCenter: true,
+			    imageScaleMode: 'fill',
+			    transitionType:'fade',
+			    autoScaleSlider: true, 
+			    autoScaleSliderWidth: 900,     
+			    autoScaleSliderHeight: 400,
+			    loop: true,
+			    arrowsNav: false,
+			    keyboardNavEnabled: true
+			  }).data('royalSlider');
+
+			  win.resize(function() {
+			    if(win.width() < 760) {
+			      slider.st.thumbs.fitInViewport = false;
+			    } else {
+			      slider.st.thumbs.fitInViewport = true;
+			    }
+			  });
+			  $('#btn').click(function() {
+			    console.log('click');
+			    return false;
+			  });
+			});
+			// function toggle_visibility() {
+			// 	var a = document.getElementById('gallery-t-group');
+			// 	var b = document.getElementById('gallery-t-group2');
+			// 	a.style.display = ((a.style.display!='none') ? 'none' : 'block');
+			// 	if(a.style.display === 'block'){
+			// 		b.style.display = 'none'
+			// 	}
+			// };
+			$('#gallery-t-group2').hide();
+
+			$('.portfolioHeadings').on(
+			  'click',
+			  function() 
+			  {
+			    $('#gallery-t-group, #gallery-t-group2').toggle()
+			  }
+			);
+			$('.gall2, .comProj').hide();
+			
+
+			$('.portfolioHeadings').on(
+			  'click',
+			  function() 
+			  {
+			    $('.gall1, .gall2').toggle();
+			    $('.resProj, .comProj').toggle();
+			  }
+			);
+			
 		</script>
 	</body>
 </html>
