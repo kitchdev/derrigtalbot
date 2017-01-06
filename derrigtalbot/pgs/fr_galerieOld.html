@@ -49,7 +49,7 @@
 	</head>
 	<body>
 		<div id="mainImagePortfolio">
-			<h2 class="portfolioHeadings">Residential</h2>
+			<h2 class="portfolioHeadings">Résidentiel</h2>
 			<div id="gallery-t-group" class="royalSlider rsDefaultInv">
 				<a class="rsImg" href="../img/1.jpg"><img class="rsTmb" width="56" height="56" src="../img/1.jpg"></a>
 			    <a class="rsImg" href="../img/2.jpg"><img class="rsTmb" width="56" height="56" src="../img/2.jpg"></a>
@@ -62,10 +62,10 @@
 			    <a class="rsImg" href="../img/9.jpg"><img class="rsTmb" width="56" height="56" src="../img/9.jpg"></a>
 			    <a class="rsImg" href="../img/10.jpg"><img class="rsTmb" width="56" height="56" src="../img/10.jpg"></a>
 			    <a class="rsImg" href="../img/11.jpg"><img class="rsTmb" width="56" height="56" src="../img/11.jpg"></a>
-			    <a class="rsImg" href="../img/12.jpg"><img class="rsTmb" width="56" height="56" src="../img/12.jpg"></a>
+			    <a class="rsImg" href="../img/12.jpg"><img class="rsTmb" width="56" height="56" src="../img/12.jpg"></a> 
 			    <a class="rsImg" href="../img/res01.jpg"><img class="rsTmb" width="56" height="56" src="../img/res01.jpg"></a>
 			    <a class="rsImg" href="../img/res02.jpg"><img class="rsTmb" width="56" height="56" src="../img/res02.jpg"></a>
-			    <a class="rsImg" href="../img/res03.jpg"><img class="rsTmb" width="56" height="56" src="../img/res03.jpg"></a>
+			    <a class="rsImg" href="../img/res03.jpg"><img class="rsTmb" width="56" height="56" src="../img/res03.jpg"></a> 
 		    </div>
 			<!-- End of royalSlider div -->
 
@@ -79,19 +79,16 @@
 		</div>
 		<!-- End of mainImage div -->
 
-
-
 		<!-- Site navigation fixed to bottom of page -->
-		<a id="jump" id="top" href="#nav">Site Navigation</a>
+		<a id="jump" id="top" href="#nav">Navigation</a>
 		<nav>
 			<!-- Logo is styled in CSS file as opposed to being an img tag so that we can serve different sized logos depending on the screen size -->
-			<a class="logo" href="../index.html"></a>
-			
+			<a class="logo" href="fr_index.html"></a>
 			<ul id="nav">
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="team.html">Team</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="fr_galerie.html">Galerie</a></li>
+				<li><a href="fr_apropos.html">À propos</a></li>
+				<li><a href="fr_equipe.html">Équipe</a></li>
+				<li><a href="fr_contact.html">Contact</a></li>
 				<li>
 	<a class="socialButton" href="https://instagram.com/derrigtalbot/">
 		<i class="fa fa-instagram"></i>
@@ -103,10 +100,9 @@
 		<i class="fa fa-houzz"></i>
 	</a>
 </li>
-				<li><a href="fr_galerie.html">Français</a></li>
-				<li id="back"><a href="#top">Back to Top</a></li>
+				<li><a href="portfolio.html">English</a></li>
+				<li id="back"><a href="#top">Retournez en haut</a></li>
 			</ul>
-			
 			<!-- <div id="socialIconsContainer">
 				<a class="socialButton" id="instagram" href="#"></a>
 				<a class="socialButton" id="facebook" href="#"></a>
@@ -119,9 +115,9 @@
 			jQuery(document).ready(function() {
 			  var win = $(window);
 			  var slider = $('#gallery-t-group, #gallery-t-group2').royalSlider({
-			  
+			    controlNavigation: 'thumbnails',
 			    thumbs: {
-			      orientation: 'horizontal',
+			      orientation: 'vertical',
 			      navigation: false,
 			      fitInViewport: (win.width() < 760) ? false : true,
 			      spacing: 1,
@@ -132,7 +128,7 @@
 			      change: true,
 			      prefix: 'image-'
 			    },
-			    globalCaption: true,
+			    globalCaption: false,
 			    numImagesToPreload: 2,
 			    fadeinLoadedSlide: true,
 			    imageAlignCenter: true,

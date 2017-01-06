@@ -94,20 +94,21 @@ a.logo {
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     color: #646464;
     text-transform: uppercase;
-	margin-top: 10px;
+	margin-top: 0px;
 	/*margin-bottom: 14px;*/
 	/*border-bottom: 4px dotted #fff;*/
 	/*Increase line height in order to increase space between text and bottom border*/
 	line-height: 2.5em;
 	font-size: 2em;
 	letter-spacing: 1px;
-
 }
 
 .portfolioHeadings:hover{
   cursor: pointer;
-  color: #cccccc;
+  color: #b3b3b3;
 }
+
+
 
 
 
@@ -116,26 +117,82 @@ a.logo {
   
 }
 
+.header {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.portfolioHeadings.gall1 {
+  margin-right: 110px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 540px) {  
+  .header {
+    display: block;
+  }
+  .projects {
+    flex-direction: column;
+    margin-bottom: 20px !important;
+    margin-top: 20px;
+  }
+
+  .portfolioHeadings {
+	line-height: 1em;
+}
+}
+
+.active {
+  color: #bfbfbf !important;
+}
+
+.projects {
+  margin-bottom: 8px;
+}
+
+
+
+
 .comProj {
-  margin-right: 10vw;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 5vw;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   text-transform: uppercase;
   color: #646464;
+  font-size: 15px;
+  line-height: 17px;
+
 }
 
 .resProj {
-  margin-right: 10vw;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 5vw;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   text-transform: uppercase;
   color: #646464;
+  font-size: 15px;
+  line-height: 17px;
+  
 }
 .resProj:hover {
   color: #cccccc;
+  cursor: pointer;
 }
 
 .comProj:hover {
   color: #cccccc;
+  cursor: pointer;
 }
+
+
+
+
+
+
+
+
 
 #royalWithCheese {
 	position: absolute;
@@ -298,6 +355,333 @@ a.logo {
   }
 }
 
+#gallProj1 {
+  width: 100%;
+}
+.rsDefaultInv,
+.rsDefaultInv .rsOverflow,
+.rsDefaultInv .rsSlide,
+.rsDefaultInv .rsVideoFrameHolder,
+.rsDefaultInv .rsThumbs {
+  /*Grey background*/
+  /*background: #4d4d4f;*/
+  background: rgba(0,0,0,0);
+}
+
+#gallProj1 .rsThumb {
+  float: left;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  padding: 0 5px 5px 0;
+}
+#gallProj1 .rsThumbs {
+  width: 285px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 0 5px 0 5px;
+  right: 0;
+}
+#gallProj1 .rsGCaption {
+  right: 285px;
+  line-height: 12px;
+  padding: 1px 7px;
+  font-size: 11px;
+  background: #4d4d4f;
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  float: none;
+  text-align: left;
+}
+@media screen and (min-width: 0px) and (max-width: 1200px) {  
+  #gallProj1 .rsThumbs {
+    width: 228px;
+  }
+  #gallProj1 .rsGCaption {
+    right: 228px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {  
+  #gallProj1 .rsThumbs {
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1px 0 0 1px;
+  }
+  #gallProj1 .rsThumbsContainer {
+    height: auto !important;
+  }
+  #gallProj1 .rsGCaption { 
+    right: 0;
+  }
+
+}
+
+#gallProj2 {
+  width: 100%;
+}
+.rsDefaultInv,
+.rsDefaultInv .rsOverflow,
+.rsDefaultInv .rsSlide,
+.rsDefaultInv .rsVideoFrameHolder,
+.rsDefaultInv .rsThumbs {
+  /*Grey background*/
+  /*background: #4d4d4f;*/
+  background: rgba(0,0,0,0);
+}
+
+#gallProj2 .rsThumb {
+  float: left;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  padding: 0 5px 5px 0;
+}
+#gallProj2 .rsThumbs {
+  width: 285px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 0 5px 0 5px;
+  right: 0;
+}
+#gallProj2 .rsGCaption {
+  right: 285px;
+  line-height: 12px;
+  padding: 1px 7px;
+  font-size: 11px;
+  background: #4d4d4f;
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  float: none;
+  text-align: left;
+}
+@media screen and (min-width: 0px) and (max-width: 1200px) {  
+  #gallProj2 .rsThumbs {
+    width: 228px;
+  }
+  #gallProj2 .rsGCaption {
+    right: 228px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {  
+  #gallProj2 .rsThumbs {
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1px 0 0 1px;
+  }
+  #gallProj2 .rsThumbsContainer {
+    height: auto !important;
+  }
+  #gallProj2 .rsGCaption { 
+    right: 0;
+  }
+
+}
+#gallProj3 {
+  width: 100%;
+}
+.rsDefaultInv,
+.rsDefaultInv .rsOverflow,
+.rsDefaultInv .rsSlide,
+.rsDefaultInv .rsVideoFrameHolder,
+.rsDefaultInv .rsThumbs {
+  /*Grey background*/
+  /*background: #4d4d4f;*/
+  background: rgba(0,0,0,0);
+}
+
+#gallProj3 .rsThumb {
+  float: left;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  padding: 0 5px 5px 0;
+}
+#gallProj3 .rsThumbs {
+  width: 285px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 0 5px 0 5px;
+  right: 0;
+}
+#gallProj3 .rsGCaption {
+  right: 285px;
+  line-height: 12px;
+  padding: 1px 7px;
+  font-size: 11px;
+  background: #4d4d4f;
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  float: none;
+  text-align: left;
+}
+@media screen and (min-width: 0px) and (max-width: 1200px) {  
+  #gallProj3 .rsThumbs {
+    width: 228px;
+  }
+  #gallProj3 .rsGCaption {
+    right: 228px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {  
+  #gallProj3 .rsThumbs {
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1px 0 0 1px;
+  }
+  #gallProj3 .rsThumbsContainer {
+    height: auto !important;
+  }
+  #gallProj3 .rsGCaption { 
+    right: 0;
+  }
+
+}
+
+
+
+#gallProj4 {
+  width: 100%;
+}
+.rsDefaultInv,
+.rsDefaultInv .rsOverflow,
+.rsDefaultInv .rsSlide,
+.rsDefaultInv .rsVideoFrameHolder,
+.rsDefaultInv .rsThumbs {
+  /*Grey background*/
+  /*background: #4d4d4f;*/
+  background: rgba(0,0,0,0);
+}
+
+#gallProj4 .rsThumb {
+  float: left;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  padding: 0 5px 5px 0;
+}
+#gallProj4 .rsThumbs {
+  width: 285px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 0 5px 0 5px;
+  right: 0;
+}
+#gallProj4 .rsGCaption {
+  right: 285px;
+  line-height: 12px;
+  padding: 1px 7px;
+  font-size: 11px;
+  background: #4d4d4f;
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  float: none;
+  text-align: left;
+}
+@media screen and (min-width: 0px) and (max-width: 1200px) {  
+  #gallProj4 .rsThumbs {
+    width: 228px;
+  }
+  #gallProj4 .rsGCaption {
+    right: 228px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {  
+  #gallProj4 .rsThumbs {
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1px 0 0 1px;
+  }
+  #gallProj4 .rsThumbsContainer {
+    height: auto !important;
+  }
+  #gallProj4 .rsGCaption { 
+    right: 0;
+  }
+
+}
+
+
+
+#gallProj5 {
+  width: 100%;
+}
+.rsDefaultInv,
+.rsDefaultInv .rsOverflow,
+.rsDefaultInv .rsSlide,
+.rsDefaultInv .rsVideoFrameHolder,
+.rsDefaultInv .rsThumbs {
+  /*Grey background*/
+  /*background: #4d4d4f;*/
+  background: rgba(0,0,0,0);
+}
+
+#gallProj5 .rsThumb {
+  float: left;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  padding: 0 5px 5px 0;
+}
+#gallProj5 .rsThumbs {
+  width: 285px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 0 5px 0 5px;
+  right: 0;
+}
+#gallProj5 .rsGCaption {
+  right: 285px;
+  line-height: 12px;
+  padding: 1px 7px;
+  font-size: 11px;
+  background: #4d4d4f;
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  float: none;
+  text-align: left;
+}
+@media screen and (min-width: 0px) and (max-width: 1200px) {  
+  #gallProj5 .rsThumbs {
+    width: 228px;
+  }
+  #gallProj5 .rsGCaption {
+    right: 228px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {  
+  #gallProj5 .rsThumbs {
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1px 0 0 1px;
+  }
+  #gallProj5 .rsThumbsContainer {
+    height: auto !important;
+  }
+  #gallProj5 .rsGCaption { 
+    right: 0;
+  }
+
+}
 /*End - Gallery with Deep Linking*/
 
 /* Social Media Icons */
